@@ -1,0 +1,23 @@
+{
+  "name": "baiji-glue",
+  "version": "1.0.0",
+  "description": "Baiji Glue",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baijijs/glue.git"
+  },
+  "keywords": [
+    "baiji",
+    "glue"
+  ],
+  "author": "Felix Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baijijs/glue/issues"
+  },
+  "homepage": "https://github.com/baijijs/glue#readme"
+}
