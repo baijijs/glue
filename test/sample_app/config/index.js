@@ -1,3 +1,3 @@
 var glue = require('../../../');
 
-module.exports = glue.loadConfig(__dirname);
+module.exports = glue(__dirname);
