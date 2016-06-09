@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/baijijs/glue/issues"
   },
-  "homepage": "https://github.com/baijijs/glue#readme"
+  "homepage": "https://github.com/baijijs/glue#readme",
+  "dependencies": {
+    "glob": "^6.0.4"
+  }
 }
