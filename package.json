@@ -2,7 +2,7 @@
   "name": "baiji-glue",
   "version": "1.0.0",
   "description": "Baiji Glue",
-  "main": "index.js",
+  "main": "lib/glue.js",
   "scripts": {
     "test": "mocha"
   },
@@ -22,5 +22,9 @@
   "homepage": "https://github.com/baijijs/glue#readme",
   "dependencies": {
     "glob": "^6.0.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
   }
 }
