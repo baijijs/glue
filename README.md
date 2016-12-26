@@ -36,9 +36,8 @@ npm install baiji-glue --save
 #    ...├── [environment]_access.js => development_access.log
 #    ...└── [environment]_error.js => development_error.log
 #
-# 5. Load initializer files under `initializers` folder
 #
-# 6. Combine above data and return configs data with following structure:
+# 5. Combine above configs by following structure:
 #    {
 #       env: {
 #          NODE_ENV: 'development',
@@ -58,6 +57,11 @@ npm install baiji-glue --save
 #       },
 #       ... other configs from environment related config file and default config file
 #    }
+#
+# 6. Load initializer files under `initializers` folder and invoke functional
+#    initializers with `config` as parameter
+#
+# 7. Return combined config
 #
 ```
 

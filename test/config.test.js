@@ -44,5 +44,6 @@ describe('loadConfig', function() {
 
   it('shoule have loaded initializers', function() {
     expect(config).to.have.deep.property('__loadedInitializers.init');
+    expect(config).to.have.deep.property('functionalInitializerInvoked', true);
   });
 });
