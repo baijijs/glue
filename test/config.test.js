@@ -40,6 +40,8 @@ describe('loadConfig', function() {
 
   it('should have config', function() {
     expect(config).to.have.property('sample', true);
+    expect(config).to.have.deep.property('languages.en', 'English');
+    expect(config).to.have.deep.property('languages.zh-CN', 'Chinese');
   });
 
   it('shoule have loaded initializers', function() {
