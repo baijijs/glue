@@ -17,12 +17,14 @@ npm install baiji-glue --save
 #
 # Load config files by predefined pattern and orders:
 #
-# 1. Load `config.js`
+# 1. Load `config.{js,json}`
 #
-# 2. Load `[environment].js` file according to `process.env.NODE_ENV`, default
+# 2. Load `[extraConfig].config.{js,json}`
+#
+# 3. Load `[environment].{js,json}` file according to `process.env.NODE_ENV`, default
 #    is `development`, such as: environments/development.js
 #
-# 3. Generate environment related method according to file names under `environments`
+# 4. Generate environment related method according to file names under `environments`
 #    folder, such as:
 #    ├── environments
 #    ...├── development.js
@@ -31,13 +33,12 @@ npm install baiji-glue --save
 #    method `isDevelopment`, `isProduction`, `isTest` will be generated according
 #    to above folder structure
 #
-# 4. Add logger folder and related files
+# 5. Add logger folder and related files
 #    ├── logs
 #    ...├── [environment]_access.js => development_access.log
 #    ...└── [environment]_error.js => development_error.log
 #
-#
-# 5. Combine above configs by following structure:
+# 6. Combine above configs by following structure:
 #    {
 #       env: {
 #          NODE_ENV: 'development',
@@ -58,10 +59,10 @@ npm install baiji-glue --save
 #       ... other configs from environment related config file and default config file
 #    }
 #
-# 6. Load initializer files under `initializers` folder and invoke functional
+# 7. Load initializer files under `initializers` folder and invoke functional
 #    initializers with `config` as parameter
 #
-# 7. Return combined config
+# 8. Return combined config
 #
 ```
 
