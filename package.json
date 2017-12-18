@@ -1,6 +1,6 @@
 {
   "name": "baiji-glue",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Baiji Glue",
   "main": "lib/glue.js",
   "scripts": {
@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/baijijs/glue#readme",
   "dependencies": {
-    "glob": "^7.1.1",
+    "glob": "^7.1.2",
     "magico": "^1.1.1",
-    "winston": "^2.3.1"
+    "winston": "^2.4.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.5.3"
   }
 }
