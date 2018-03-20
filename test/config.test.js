@@ -26,7 +26,7 @@ describe('loadConfig', function() {
       'error.write'
     ].forEach(function(methodName) {
       it('should have error.write method', function() {
-        expect(config.logger).to.have.deep.property(methodName).to.be.a('function');
+        expect(config.logger).to.have.nested.property(methodName).to.be.a('function');
       });
     });
   });
@@ -40,12 +40,12 @@ describe('loadConfig', function() {
 
   it('should have config', function() {
     expect(config).to.have.property('sample', true);
-    expect(config).to.have.deep.property('languages.en', 'English');
-    expect(config).to.have.deep.property('languages.zh-CN', 'Chinese');
+    expect(config).to.have.nested.property('languages.en', 'English');
+    expect(config).to.have.nested.property('languages.zh-CN', 'Chinese');
   });
 
   it('shoule have loaded initializers', function() {
-    expect(config).to.have.deep.property('__loadedInitializers.init');
-    expect(config).to.have.deep.property('functionalInitializerInvoked', true);
+    expect(config).to.have.nested.property('__loadedInitializers.init');
+    expect(config).to.have.nested.property('functionalInitializerInvoked', true);
   });
 });
