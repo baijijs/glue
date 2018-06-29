@@ -1,6 +1,6 @@
 {
   "name": "baiji-glue",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Baiji Glue",
   "main": "lib/glue.js",
   "scripts": {
