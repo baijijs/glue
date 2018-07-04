@@ -2,6 +2,9 @@ Glue
 ====
 
 [![Build Status](https://travis-ci.org/baijijs/glue.svg?branch=master)](https://travis-ci.org/baijijs/glue)
+[![npm version](https://badge.fury.io/js/baiji-glue.svg)](https://badge.fury.io/js/baiji-glue)
+[![npm](https://img.shields.io/npm/dt/baiji-glue.svg)]()
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/lyfeyaj/baiji-glue/master/LICENSE.md)
 
 Magic glue that makes baiji components work together
 
