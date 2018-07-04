@@ -1,6 +1,6 @@
 {
   "name": "baiji-glue",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Magic glue that makes baiji components work together",
   "main": "lib/glue.js",
   "scripts": {
