@@ -44,6 +44,10 @@ describe('loadConfig', function() {
     expect(config).to.have.nested.property('languages.zh-CN', 'Chinese');
   });
 
+  it('should have extra env config', function() {
+    expect(config).to.have.nested.property('database.user', 'db_dev');
+  });
+
   it('shoule have loaded initializers', function() {
     expect(config).to.have.nested.property('__loadedInitializers.init');
     expect(config).to.have.nested.property('functionalInitializerInvoked', true);
