@@ -1,19 +1,10 @@
 var chai = require('chai');
 var config = require('./sample_app/config');
-var winston = require('winston');
 
 var expect = chai.expect;
 
 describe('loadConfig', function() {
   describe('logger', function() {
-    it('should have infoLogger as a winston custom logger', function() {
-      expect(config.logger).to.have.property('infoLogger').to.be.instanceOf(winston.Logger);
-    });
-
-    it('should have errorLogger as a winston custom logger', function() {
-      expect(config.logger).to.have.property('errorLogger').to.be.instanceOf(winston.Logger);
-    });
-
     [
       'log',
       'warn',
