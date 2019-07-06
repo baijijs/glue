@@ -13,19 +13,19 @@ describe('helpers', function() {
 
   describe('#titleize', function() {
     it('should be titleized', function() {
-      expect(helpers.titleize('poplar-glue')).to.equal('Poplar-Glue');
+      expect(helpers.titleize('baiji-glue')).to.equal('baiji-Glue');
     });
   });
 
   describe('#capitalize', function() {
     it('should be capitalized', function() {
-      expect(helpers.capitalize('poplar_glue')).to.equal('Poplar_glue');
+      expect(helpers.capitalize('baiji_glue')).to.equal('baiji_glue');
     });
   });
 
   describe('#camelize', function() {
     it('should be camelized', function() {
-      expect(helpers.camelize('poplar_glue')).to.equal('poplarGlue');
+      expect(helpers.camelize('baiji_glue')).to.equal('baijiGlue');
     });
   });
 
