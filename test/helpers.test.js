@@ -13,13 +13,13 @@ describe('helpers', function() {
 
   describe('#titleize', function() {
     it('should be titleized', function() {
-      expect(helpers.titleize('baiji-glue')).to.equal('baiji-Glue');
+      expect(helpers.titleize('baiji-glue')).to.equal('Baiji-Glue');
     });
   });
 
   describe('#capitalize', function() {
     it('should be capitalized', function() {
-      expect(helpers.capitalize('baiji_glue')).to.equal('baiji_glue');
+      expect(helpers.capitalize('baiji_glue')).to.equal('Baiji_glue');
     });
   });
 
